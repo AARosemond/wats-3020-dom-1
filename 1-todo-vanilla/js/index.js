@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   document.addEventListener('submit', (event) => {
     event.preventDefault();
-  }   
-    let itemInput = document.querySelector("input[name=`item-input`]");
+    
+    let itemInput = document.querySelector("input[name='item-input']");
     let itemValue = itemInput.value;
 
     //test to be sure that user entered a value
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       //create new item
       let newItemEl = document.createElement("li");
       let newCheckbox = document.createElement("input");
-      newCheckbox.setAttribute("Type","checkbox");
+      newCheckbox.setAttribute("Type", "checkbox");
       newItemEl.appendChild(newCheckbox);
 
       let newLabel = document.createElement("label");
